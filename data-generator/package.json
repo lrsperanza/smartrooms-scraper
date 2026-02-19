@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@azure/storage-blob": "^12.31.0",
+    "playwright": "^1.58.2"
+  },
+  "name": "smartrooms-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "smartrooms-healthcheck.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

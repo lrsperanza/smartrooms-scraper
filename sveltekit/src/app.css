@@ -1,0 +1,218 @@
+@import 'tailwindcss';
+
+:root {
+	--color-livre: #22c55e;
+	--color-ocupado: #ef4444;
+	--color-indisponivel: #94a3b8;
+	--card-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+	--card-radius: 0.5rem;
+}
+
+body {
+	@apply bg-slate-50 text-slate-900 antialiased;
+}
+
+/* Empty state */
+.empty-state {
+	@apply flex min-h-[60vh] items-center justify-center p-6;
+}
+.empty-state-card {
+	@apply flex max-w-md flex-col items-center rounded-xl bg-white p-8 text-center shadow-lg;
+	box-shadow: var(--card-shadow), 0 4px 20px rgb(0 0 0 / 0.06);
+	border-radius: var(--card-radius);
+}
+.empty-state-icon {
+	@apply mb-4 text-5xl;
+}
+.empty-state-title {
+	@apply mb-2 text-xl font-semibold text-slate-800;
+}
+.empty-state-message {
+	@apply mb-6 text-slate-600;
+}
+.empty-state-button {
+	@apply inline-flex items-center gap-2 rounded-lg bg-slate-800 px-5 py-2.5 font-medium text-white transition hover:bg-slate-700 disabled:opacity-60;
+}
+
+/* Dashboard header */
+.dashboard-header {
+	@apply flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 bg-white px-6 py-4 shadow-sm;
+}
+.dashboard-title {
+	@apply text-xl font-semibold text-slate-800;
+}
+.dashboard-controls {
+	@apply flex flex-wrap items-center gap-3;
+}
+.dashboard-update-button {
+	@apply inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 disabled:opacity-60;
+}
+.dashboard-grid {
+	@apply grid gap-6 p-6;
+	grid-template-columns: repeat(auto-fill, minmax(42rem, 1fr));
+}
+
+/* View toggle */
+.view-toggle {
+	@apply inline-flex overflow-hidden rounded-lg border border-slate-300;
+}
+.view-toggle-btn {
+	@apply px-4 py-2 text-sm font-medium text-slate-600 transition;
+	background: white;
+}
+.view-toggle-btn:not(:last-child) {
+	@apply border-r border-slate-300;
+}
+.view-toggle-btn:hover {
+	@apply bg-slate-50;
+}
+.view-toggle-btn.active {
+	@apply bg-slate-800 text-white;
+}
+
+/* Region view */
+.dashboard-regions {
+	@apply flex flex-col gap-8 p-6;
+}
+
+/* Region card */
+.region-card {
+	@apply overflow-hidden rounded-xl bg-white shadow;
+	box-shadow: var(--card-shadow);
+	border-radius: var(--card-radius);
+}
+.region-card-header {
+	@apply border-b border-slate-100 bg-slate-50/80 px-5 py-4;
+}
+.region-card-title {
+	@apply text-lg font-semibold text-slate-800;
+}
+.region-card-subtitle {
+	@apply mt-0.5 text-sm text-slate-500;
+}
+.region-card-body {
+	@apply divide-y divide-slate-100;
+}
+
+/* Room type section inside region card */
+.region-room-type {
+	@apply px-5 py-4;
+}
+.region-room-type-title {
+	@apply mb-3 text-base font-semibold text-slate-700;
+}
+.region-room-type-content {
+	@apply grid gap-4;
+	grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+	.region-room-type-content {
+		grid-template-columns: 1fr;
+	}
+}
+.region-room-type-chart {
+	@apply min-h-[240px];
+}
+.region-room-type-estimation {
+	@apply min-h-0;
+}
+
+/* Room card */
+.room-card {
+	@apply overflow-hidden rounded-xl bg-white shadow;
+	box-shadow: var(--card-shadow);
+	border-radius: var(--card-radius);
+}
+.room-card-header {
+	@apply border-b border-slate-100 bg-slate-50/80 px-5 py-3;
+}
+.room-card-title {
+	@apply text-base font-semibold text-slate-800;
+}
+.room-card-subtitle {
+	@apply mt-0.5 text-sm text-slate-500;
+}
+.room-card-body {
+	@apply grid gap-4 p-4;
+	grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+	.room-card-body {
+		grid-template-columns: 1fr;
+	}
+}
+.room-card-chart {
+	@apply min-h-[240px];
+}
+.occupation-chart-wrap {
+	@apply h-[240px] w-full;
+}
+.occupation-chart {
+	@apply block h-full w-full;
+}
+
+/* Monthly estimation */
+.monthly-estimation {
+	@apply rounded-lg border border-slate-200 bg-slate-50/50 p-4 text-sm;
+}
+.monthly-estimation-title {
+	@apply mb-3 text-sm font-semibold text-slate-700;
+}
+.estimation-category {
+	@apply mb-4 last:mb-0;
+}
+.estimation-category-title {
+	@apply mb-1.5 flex flex-wrap items-center gap-2 text-xs font-medium uppercase tracking-wide text-slate-500;
+}
+.estimation-badge {
+	@apply font-normal normal-case text-slate-400;
+}
+.estimation-no-data {
+	@apply text-slate-500;
+}
+.estimation-formulas {
+	@apply space-y-1;
+}
+.estimation-row {
+	@apply flex flex-wrap gap-2;
+}
+.estimation-dt {
+	@apply w-24 shrink-0 font-medium;
+}
+.estimation-dd {
+	@apply text-slate-600;
+}
+.status-livre {
+	@apply text-green-600;
+}
+.status-ocupado {
+	@apply text-red-600;
+}
+.status-indisponivel {
+	@apply text-slate-500;
+}
+.estimation-total {
+	@apply mt-4 border-t border-slate-200 pt-4;
+}
+.estimation-total-title {
+	@apply mb-2 text-xs font-semibold uppercase tracking-wide text-slate-600;
+}
+
+/* Revenue estimation */
+.estimation-revenue {
+	@apply mt-4 rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-center;
+}
+.estimation-revenue-title {
+	@apply mb-1 text-xs font-semibold uppercase tracking-wide text-emerald-700;
+}
+.estimation-revenue-value {
+	@apply text-xl font-bold text-emerald-700;
+}
+.estimation-revenue-detail {
+	@apply mt-0.5 text-xs text-emerald-600/80;
+}
+
+/* Spinner */
+.spinner {
+	@apply inline-block h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent;
+}
