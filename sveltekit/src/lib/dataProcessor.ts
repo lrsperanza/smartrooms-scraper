@@ -69,6 +69,9 @@ function getDayCategory(dayOfWeek: number): DayCategory {
  * Reclassifies those entries by moving ocupado → indisponivel and setting
  * dayOfWeek to 0 (Sunday) so the day counts as unavailable and falls into
  * the "Domingos e Feriados" category rather than inflating business-day occupancy.
+ * 
+ * Additionally, forcibly sets all Sundays (dayOfWeek === 0) as fully unavailable
+ * to correct bugs where they were stored as available or occupied.
  */
 export function reclassifyClosedRegionDays(entries: DataEntry[]): DataEntry[] {
 	// Group entries by (unitName, date) to inspect each region-day
@@ -83,22 +86,29 @@ export function reclassifyClosedRegionDays(entries: DataEntry[]): DataEntry[] {
 		group.push(e);
 	}
 
-	// Build set of keys where ALL rooms are 100% "occupied" (livre=0, indisponivel=0)
-	const closedKeys = new Set<string>();
+	// Build set of dates where at least one region has ALL rooms 100% "occupied" (livre=0, indisponivel=0)
+	const closedDates = new Set<string>();
 	for (const [key, group] of regionDateMap) {
 		const allFullyOccupied = group.every((e) => e.livre === 0 && e.indisponivel === 0 && e.ocupado > 0);
 		if (allFullyOccupied) {
-			closedKeys.add(key);
+			const date = key.split('|||')[1];
+			closedDates.add(date);
 		}
 	}
 
-	if (closedKeys.size === 0) return entries;
+	const hasSundays = entries.some((e) => e.dayOfWeek === 0);
+	if (closedDates.size === 0 && !hasSundays) return entries;
 
-	// Reclassify: move ocupado → indisponivel for closed region-days
+	// Reclassify: move everything to indisponivel for closed dates across all regions and for all Sundays
 	return entries.map((e) => {
-		const key = `${e.unitName}|||${e.date}`;
-		if (closedKeys.has(key)) {
-			return { ...e, indisponivel: e.ocupado, ocupado: 0, dayOfWeek: 0 };
+		if (e.dayOfWeek === 0 || closedDates.has(e.date)) {
+			return { 
+				...e, 
+				indisponivel: e.indisponivel + e.ocupado + e.livre, 
+				ocupado: 0, 
+				livre: 0, 
+				dayOfWeek: 0 
+			};
 		}
 		return e;
 	});
