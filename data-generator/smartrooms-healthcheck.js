@@ -294,6 +294,17 @@ async function countStatuses(page) {
     page.locator("span.badge.off").count(),
   ]);
 
+  // Check if the selected date matches today's date
+  const now = new Date();
+  const todayStr = `${String(now.getDate()).padStart(2, "0")}/${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;
+  
+  const selectedDateText = await page.locator("select#dataconsulta").evaluate(el => el.options[el.selectedIndex]?.text).catch(() => null);
+  
+  if (selectedDateText && !selectedDateText.includes(todayStr)) {
+    console.log(`[!] Selected date (${selectedDateText.trim()}) does not match today (${todayStr}). Defaulting to UNAVAILABLE.`);
+    return { livre: 0, ocupado: 0, indisponivel: livre + ocupado + indisponivel };
+  }
+
   return { livre, ocupado, indisponivel };
 }
 
