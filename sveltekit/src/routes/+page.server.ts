@@ -28,7 +28,7 @@ export async function load() {
 		return { hasData: false, entries: [] as DataEntry[] };
 	}
 
-	const jsonFiles = files.filter((f) => f.endsWith('.json'));
+	const jsonFiles = files.filter((f) => f.endsWith('.json') && !f.includes('vitaboum'));
 	const entries: DataEntry[] = [];
 
 	for (const file of jsonFiles) {

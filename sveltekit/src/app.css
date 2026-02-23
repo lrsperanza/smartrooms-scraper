@@ -12,6 +12,42 @@ body {
 	@apply bg-slate-50 text-slate-900 antialiased;
 }
 
+/* Site navigation */
+.site-nav {
+	@apply flex items-center gap-1 bg-slate-900 px-6 py-2;
+}
+.site-nav-link {
+	@apply rounded-md px-3 py-1.5 text-sm font-medium text-slate-300 transition hover:bg-slate-800 hover:text-white no-underline;
+}
+.site-nav-link.active {
+	@apply bg-slate-700 text-white;
+}
+
+/* Vitaboum summary strip */
+.vitaboum-summary {
+	@apply flex flex-wrap gap-4 px-6 py-5;
+}
+.summary-card {
+	@apply flex flex-col items-center rounded-xl bg-white px-5 py-4 shadow;
+	box-shadow: var(--card-shadow);
+	min-width: 8rem;
+}
+.summary-card-highlight {
+	@apply border-2 border-emerald-200 bg-emerald-50;
+}
+.summary-value {
+	@apply text-xl font-bold text-slate-800;
+}
+.summary-card-highlight .summary-value {
+	@apply text-emerald-700;
+}
+.summary-label {
+	@apply mt-0.5 text-xs font-medium text-slate-500;
+}
+.summary-card-highlight .summary-label {
+	@apply text-emerald-600;
+}
+
 /* Empty state */
 .empty-state {
 	@apply flex min-h-[60vh] items-center justify-center p-6;
