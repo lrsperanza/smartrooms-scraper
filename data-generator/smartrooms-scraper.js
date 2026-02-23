@@ -162,7 +162,7 @@ function withTimeout(promise, ms, stepName) {
     timeoutId = setTimeout(() => {
       reject(
         new Error(
-          `${stepName} timed out after ${ms}ms. If you are using Bun, try running with Node instead: node smartrooms-healthcheck.js`
+          `${stepName} timed out after ${ms}ms. If you are using Bun, try running with Node instead: node smartrooms-scraper.js`
         )
       );
     }, ms);
@@ -345,7 +345,7 @@ async function countStatusesByRoom(page) {
 }
 
 async function main() {
-  console.log("Starting SmartRooms healthcheck...");
+  console.log("Starting SmartRooms scraper...");
   if (typeof Bun !== "undefined") {
     console.log(
       "Running with Bun detected. If launch hangs, run with Node for best Playwright compatibility."
@@ -391,7 +391,7 @@ async function main() {
       console.log(`Uploaded to Azure Blob Storage: ${uploadedFileUrl}`);
     }
   } catch (error) {
-    console.error("Healthcheck failed:");
+    console.error("Scraping failed:");
     console.error(error);
     process.exitCode = 1;
   } finally {
