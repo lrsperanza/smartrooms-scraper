@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-03-15T08:41:10.920Z",
+  "date": "2026-03-15",
+  "totalReservations": 3,
+  "reservations": [
+    {
+      "date": "2026-03-15",
+      "dayOfWeek": "Domingo",
+      "room": "Sala 2 - com Maca",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-15",
+      "dayOfWeek": "Domingo",
+      "room": "Sala 2 - Office",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-15",
+      "dayOfWeek": "Domingo",
+      "room": "Sala 2 Reuniões e Treinamento",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    }
+  ],
+  "summaryByRoomAndDay": [
+    {
+      "room": "Sala 2 - com Maca",
+      "dayOfWeek": "Domingo",
+      "totalReservations": 1,
+      "totalMinutes": 60,
+      "dates": [
+        {
+          "date": "2026-03-15",
+          "start": "12:00",
+          "end": "13:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 2 - Office",
+      "dayOfWeek": "Domingo",
+      "totalReservations": 1,
+      "totalMinutes": 60,
+      "dates": [
+        {
+          "date": "2026-03-15",
+          "start": "12:00",
+          "end": "13:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 2 Reuniões e Treinamento",
+      "dayOfWeek": "Domingo",
+      "totalReservations": 1,
+      "totalMinutes": 60,
+      "dates": [
+        {
+          "date": "2026-03-15",
+          "start": "12:00",
+          "end": "13:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    }
+  ]
+}

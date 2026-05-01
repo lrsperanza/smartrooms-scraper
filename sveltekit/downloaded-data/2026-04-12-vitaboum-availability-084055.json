@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-04-12T08:40:55.797Z",
+  "date": "2026-04-12",
+  "totalReservations": 2,
+  "reservations": [
+    {
+      "date": "2026-04-12",
+      "dayOfWeek": "Domingo",
+      "room": "Sala 3 - com Maca Reclinável",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "durationMinutes": 90,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-12",
+      "dayOfWeek": "Domingo",
+      "room": "Sala 3 - com Maca Reclinável",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    }
+  ],
+  "summaryByRoomAndDay": [
+    {
+      "room": "Sala 3 - com Maca Reclinável",
+      "dayOfWeek": "Domingo",
+      "totalReservations": 2,
+      "totalMinutes": 150,
+      "dates": [
+        {
+          "date": "2026-04-12",
+          "start": "12:00",
+          "end": "13:30",
+          "durationMinutes": 90,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-04-12",
+          "start": "14:00",
+          "end": "15:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    }
+  ]
+}

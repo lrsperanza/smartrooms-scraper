@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2026-04-03T08:41:14.413Z",
+  "date": "2026-04-03",
+  "totalReservations": 9,
+  "reservations": [
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 6 - Office",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "durationMinutes": 90,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 6 - com Maca",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "durationMinutes": 90,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 6 - Reuniões",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "durationMinutes": 90,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 2 - Office",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "durationMinutes": 90,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 2 - com Maca",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "durationMinutes": 90,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 2 Reuniões e Treinamento",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "durationMinutes": 90,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 2 - com Maca",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 2 - Office",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-04-03",
+      "dayOfWeek": "Sexta-feira",
+      "room": "Sala 2 Reuniões e Treinamento",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    }
+  ],
+  "summaryByRoomAndDay": [
+    {
+      "room": "Sala 2 - com Maca",
+      "dayOfWeek": "Sexta-feira",
+      "totalReservations": 2,
+      "totalMinutes": 150,
+      "dates": [
+        {
+          "date": "2026-04-03",
+          "start": "13:00",
+          "end": "14:30",
+          "durationMinutes": 90,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-04-03",
+          "start": "11:00",
+          "end": "12:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 2 - Office",
+      "dayOfWeek": "Sexta-feira",
+      "totalReservations": 2,
+      "totalMinutes": 150,
+      "dates": [
+        {
+          "date": "2026-04-03",
+          "start": "13:00",
+          "end": "14:30",
+          "durationMinutes": 90,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-04-03",
+          "start": "11:00",
+          "end": "12:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 2 Reuniões e Treinamento",
+      "dayOfWeek": "Sexta-feira",
+      "totalReservations": 2,
+      "totalMinutes": 150,
+      "dates": [
+        {
+          "date": "2026-04-03",
+          "start": "13:00",
+          "end": "14:30",
+          "durationMinutes": 90,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-04-03",
+          "start": "11:00",
+          "end": "12:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 6 - com Maca",
+      "dayOfWeek": "Sexta-feira",
+      "totalReservations": 1,
+      "totalMinutes": 90,
+      "dates": [
+        {
+          "date": "2026-04-03",
+          "start": "13:00",
+          "end": "14:30",
+          "durationMinutes": 90,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 6 - Office",
+      "dayOfWeek": "Sexta-feira",
+      "totalReservations": 1,
+      "totalMinutes": 90,
+      "dates": [
+        {
+          "date": "2026-04-03",
+          "start": "13:00",
+          "end": "14:30",
+          "durationMinutes": 90,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 6 - Reuniões",
+      "dayOfWeek": "Sexta-feira",
+      "totalReservations": 1,
+      "totalMinutes": 90,
+      "dates": [
+        {
+          "date": "2026-04-03",
+          "start": "13:00",
+          "end": "14:30",
+          "durationMinutes": 90,
+          "status": "Reservada"
+        }
+      ]
+    }
+  ]
+}

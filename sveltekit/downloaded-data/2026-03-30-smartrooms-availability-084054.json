@@ -1,0 +1,162 @@
+[
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form1",
+    "unitName": "Centro Profissional Ribeirao Shopping",
+    "roomValue": "Centro Profissional Ribeirao Shopping - sala01 - Executiva - 1",
+    "roomLabel": "sala01 - Executiva",
+    "livre": 15,
+    "ocupado": 15,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form1",
+    "unitName": "Centro Profissional Ribeirao Shopping",
+    "roomValue": "Centro Profissional Ribeirao Shopping - sala03 - Executiva - 5",
+    "roomLabel": "sala03 - Executiva",
+    "livre": 19,
+    "ocupado": 11,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form1",
+    "unitName": "Centro Profissional Ribeirao Shopping",
+    "roomValue": "Centro Profissional Ribeirao Shopping - sala04 - Executiva - 6",
+    "roomLabel": "sala04 - Executiva",
+    "livre": 18,
+    "ocupado": 12,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form1",
+    "unitName": "Centro Profissional Ribeirao Shopping",
+    "roomValue": "Centro Profissional Ribeirao Shopping - sala05 - Executiva - 20",
+    "roomLabel": "sala05 - Executiva",
+    "livre": 10,
+    "ocupado": 20,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form1",
+    "unitName": "Centro Profissional Ribeirao Shopping",
+    "roomValue": "Centro Profissional Ribeirao Shopping - sala02 - Maca - 4",
+    "roomLabel": "sala02 - Maca",
+    "livre": 13,
+    "ocupado": 17,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form1",
+    "unitName": "Centro Profissional Ribeirao Shopping",
+    "roomValue": "Centro Profissional Ribeirao Shopping - sala06 - Maca - 21",
+    "roomLabel": "sala06 - Maca",
+    "livre": 15,
+    "ocupado": 15,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form1",
+    "unitName": "Centro Profissional Ribeirao Shopping",
+    "roomValue": "Centro Profissional Ribeirao Shopping - sala04 - Reunião - 8",
+    "roomLabel": "sala04 - Reunião",
+    "livre": 18,
+    "ocupado": 12,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form2",
+    "unitName": "High Business Franca",
+    "roomValue": "High Business Franca - sala11 - Executiva - 9",
+    "roomLabel": "sala11 - Executiva",
+    "livre": 17,
+    "ocupado": 13,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form2",
+    "unitName": "High Business Franca",
+    "roomValue": "High Business Franca - sala12 - Executiva - 16",
+    "roomLabel": "sala12 - Executiva",
+    "livre": 23,
+    "ocupado": 7,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form2",
+    "unitName": "High Business Franca",
+    "roomValue": "High Business Franca - sala13 - Maca - 17",
+    "roomLabel": "sala13 - Maca",
+    "livre": 20,
+    "ocupado": 10,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form2",
+    "unitName": "High Business Franca",
+    "roomValue": "High Business Franca - sala14 - Maca - 18",
+    "roomLabel": "sala14 - Maca",
+    "livre": 14,
+    "ocupado": 16,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form2",
+    "unitName": "High Business Franca",
+    "roomValue": "High Business Franca - sala12 - Reunião - 19",
+    "roomLabel": "sala12 - Reunião",
+    "livre": 23,
+    "ocupado": 7,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form3",
+    "unitName": "Trio Office Ribeirao",
+    "roomValue": "Trio Office Ribeirao - sala21 - Executiva - 12",
+    "roomLabel": "sala21 - Executiva",
+    "livre": 14,
+    "ocupado": 16,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form3",
+    "unitName": "Trio Office Ribeirao",
+    "roomValue": "Trio Office Ribeirao - sala22 - Executiva - 13",
+    "roomLabel": "sala22 - Executiva",
+    "livre": 20,
+    "ocupado": 10,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form3",
+    "unitName": "Trio Office Ribeirao",
+    "roomValue": "Trio Office Ribeirao - sala23 - Executiva - 15",
+    "roomLabel": "sala23 - Executiva",
+    "livre": 30,
+    "ocupado": 0,
+    "indisponivel": 0
+  },
+  {
+    "generatedAt": "2026-03-30T08:40:54.182Z",
+    "unitFormId": "form3",
+    "unitName": "Trio Office Ribeirao",
+    "roomValue": "Trio Office Ribeirao - sala22 - Reunião - 14",
+    "roomLabel": "sala22 - Reunião",
+    "livre": 20,
+    "ocupado": 10,
+    "indisponivel": 0
+  }
+]

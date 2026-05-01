@@ -28,6 +28,7 @@ export async function load() {
 
 	const seen = new Set<string>();
 	const reservations: VitaboumReservation[] = [];
+	const sampledDates = new Set<string>();
 
 	// Newest files first so their entries win deduplication
 	jsonFiles.sort().reverse();
@@ -43,6 +44,10 @@ export async function load() {
 		}
 		if (!parsed.reservations || !Array.isArray(parsed.reservations)) continue;
 
+		if (parsed.date) {
+			sampledDates.add(parsed.date);
+		}
+
 		for (const r of parsed.reservations) {
 			const key = `${r.date}|${r.room}|${r.startTime}|${r.endTime}`;
 			if (seen.has(key)) continue;
@@ -53,6 +58,7 @@ export async function load() {
 
 	return {
 		hasData: reservations.length > 0,
-		reservations
+		reservations,
+		sampledDates: Array.from(sampledDates).sort()
 	};
 }

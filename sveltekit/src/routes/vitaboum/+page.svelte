@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { invalidateAll } from '$app/navigation';
-	import { groupByRoom, computeMonthlyEstimation, VITABOUM_HOURLY_RATE } from '$lib/vitaboumDataProcessor';
+	import { groupByRoom, computeTotalEstimation, VITABOUM_HOURLY_RATE } from '$lib/vitaboumDataProcessor';
 	import type { VitaboumReservation } from '$lib/vitaboumDataProcessor';
 	import EmptyState from '$lib/components/EmptyState.svelte';
 	import VitaboumRoomCard from '$lib/components/VitaboumRoomCard.svelte';
@@ -21,9 +21,10 @@
 	}
 
 	const reservations = $derived((data?.reservations ?? []) as VitaboumReservation[]);
+	const sampledDates = $derived((data?.sampledDates ?? []) as string[]);
 	const hasData = $derived(!!data?.hasData);
 
-	const roomsByKey = $derived(groupByRoom(reservations));
+	const roomsByKey = $derived(groupByRoom(reservations, sampledDates));
 	const sortedRooms = $derived(
 		(() => {
 			const list = Array.from(roomsByKey.entries());
@@ -37,18 +38,14 @@
 		reservations.reduce((s, r) => s + r.durationMinutes, 0) / 60
 	);
 
-	const allRoomEstimations = $derived(
-		Array.from(roomsByKey.values()).map((r) => computeMonthlyEstimation(r.dailyData))
-	);
-	const totalMonthlyRevenue = $derived(
-		allRoomEstimations.reduce((s, e) => s + e.total.revenue, 0)
-	);
-	const totalMonthlyHours = $derived(
-		allRoomEstimations.reduce((s, e) => s + e.total.hours, 0)
-	);
+	const totalEstimation = $derived(computeTotalEstimation(roomsByKey, sampledDates));
 
 	const formattedMonthlyRevenue = $derived(
-		totalMonthlyRevenue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+		totalEstimation.totalRevenue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+	);
+
+	const formattedRate = $derived(
+		VITABOUM_HOURLY_RATE.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 	);
 </script>
 
@@ -88,7 +85,7 @@
 			<span class="summary-label">Horas reservadas</span>
 		</div>
 		<div class="summary-card">
-			<span class="summary-value">{totalMonthlyHours.toFixed(0)}h</span>
+			<span class="summary-value">{totalEstimation.totalHours.toFixed(0)}h</span>
 			<span class="summary-label">Horas/mês (est.)</span>
 		</div>
 		<div class="summary-card summary-card-highlight">
@@ -96,6 +93,41 @@
 			<span class="summary-label">Receita/mês (est.)</span>
 		</div>
 	</div>
+
+	<section class="monthly-breakdown">
+		<h3 class="monthly-breakdown-title">Cálculo da receita mensal estimada</h3>
+		<table class="monthly-breakdown-table">
+			<thead>
+				<tr>
+					<th>Sala física</th>
+					<th>Horas/mês (est.)</th>
+					<th>Receita/mês (est.)</th>
+				</tr>
+			</thead>
+			<tbody>
+				{#each totalEstimation.physicalRooms as pr}
+					<tr>
+						<td>{pr.physicalRoom}</td>
+						<td>{pr.monthlyHours.toFixed(1)}h</td>
+						<td>{pr.monthlyRevenue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+					</tr>
+				{/each}
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Total</td>
+					<td>{totalEstimation.totalHours.toFixed(1)}h</td>
+					<td>{formattedMonthlyRevenue}</td>
+				</tr>
+			</tfoot>
+		</table>
+		<p class="monthly-breakdown-detail">
+			{totalEstimation.totalHours.toFixed(1)}h × {formattedRate}/h = {formattedMonthlyRevenue}
+		</p>
+		<p class="monthly-breakdown-note">
+			Salas com múltiplas configurações (ex: Office, com Maca, Reuniões) são contadas uma única vez por sala física.
+		</p>
+	</section>
 
 	<div class="dashboard-grid">
 		{#each sortedRooms as [, roomData]}

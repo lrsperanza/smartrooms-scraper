@@ -1,0 +1,457 @@
+{
+  "generatedAt": "2026-03-21T08:41:14.146Z",
+  "date": "2026-03-21",
+  "totalReservations": 23,
+  "reservations": [
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 3 - com Maca Reclinável",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "durationMinutes": 120,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Office",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - com Maca",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Reuniões",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 2 - com Maca",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "durationMinutes": 120,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 2 - Office",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "durationMinutes": 120,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 2 Reuniões e Treinamento",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "durationMinutes": 120,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 5 - com Maca",
+      "startTime": "13:30",
+      "endTime": "14:30",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 5 - Office",
+      "startTime": "13:30",
+      "endTime": "14:30",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - com Maca",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Office",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Reuniões",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 3 - com Maca Reclinável",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Office",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - com Maca",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Reuniões",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Office",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "durationMinutes": 120,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - com Maca",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "durationMinutes": 120,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 6 - Reuniões",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "durationMinutes": 120,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 3 - com Maca Reclinável",
+      "startTime": "17:30",
+      "endTime": "18:30",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 5 - com Maca",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Sala 5 - Office",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    },
+    {
+      "date": "2026-03-21",
+      "dayOfWeek": "Sábado",
+      "room": "Studio Funcional",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "durationMinutes": 60,
+      "status": "Reservada"
+    }
+  ],
+  "summaryByRoomAndDay": [
+    {
+      "room": "Sala 2 - com Maca",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 1,
+      "totalMinutes": 120,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:30",
+          "end": "15:30",
+          "durationMinutes": 120,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 2 - Office",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 1,
+      "totalMinutes": 120,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:30",
+          "end": "15:30",
+          "durationMinutes": 120,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 2 Reuniões e Treinamento",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 1,
+      "totalMinutes": 120,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:30",
+          "end": "15:30",
+          "durationMinutes": 120,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 3 - com Maca Reclinável",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 3,
+      "totalMinutes": 240,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:00",
+          "end": "15:00",
+          "durationMinutes": 120,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "11:00",
+          "end": "12:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "17:30",
+          "end": "18:30",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 5 - com Maca",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 2,
+      "totalMinutes": 120,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:30",
+          "end": "14:30",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "12:00",
+          "end": "13:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 5 - Office",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 2,
+      "totalMinutes": 120,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:30",
+          "end": "14:30",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "12:00",
+          "end": "13:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 6 - com Maca",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 4,
+      "totalMinutes": 300,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:00",
+          "end": "14:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "14:00",
+          "end": "15:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "11:00",
+          "end": "12:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "17:00",
+          "end": "19:00",
+          "durationMinutes": 120,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 6 - Office",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 4,
+      "totalMinutes": 300,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:00",
+          "end": "14:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "14:00",
+          "end": "15:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "11:00",
+          "end": "12:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "17:00",
+          "end": "19:00",
+          "durationMinutes": 120,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Sala 6 - Reuniões",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 4,
+      "totalMinutes": 300,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "13:00",
+          "end": "14:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "14:00",
+          "end": "15:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "11:00",
+          "end": "12:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        },
+        {
+          "date": "2026-03-21",
+          "start": "17:00",
+          "end": "19:00",
+          "durationMinutes": 120,
+          "status": "Reservada"
+        }
+      ]
+    },
+    {
+      "room": "Studio Funcional",
+      "dayOfWeek": "Sábado",
+      "totalReservations": 1,
+      "totalMinutes": 60,
+      "dates": [
+        {
+          "date": "2026-03-21",
+          "start": "09:00",
+          "end": "10:00",
+          "durationMinutes": 60,
+          "status": "Reservada"
+        }
+      ]
+    }
+  ]
+}
